@@ -1,0 +1,10 @@
+echo "showended@1" | nc localhost 13010
+echo "intermissionended@2" | nc localhost 13010
+echo "showstarted@3" | nc localhost 13010
+echo "featurestarted@4" | nc localhost 13010
+echo "showended@5" | nc localhost 13010
+echo "featurestarted@6" | nc localhost 13010
+echo "intermissionstarted@7" | nc localhost 13010
+echo "endcreditsstarted@8" | nc localhost 13010
+echo "showstarted@9" | nc localhost 13010
+echo "intermissionstarted@10" | nc localhost 13010

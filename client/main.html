@@ -3,14 +3,10 @@
 </head>
 
 <body>
-  {{> leontien}}
-</body>
-
-<template name="leontien">
-{{ #each screen in screens }}
-  <section class="intermissionstarted">
-    <label>{{ screen.label }}</label>
-    <time>18</time>
+{{ #each screens }}
+  <section class="{{ state }}">
+    <label>{{ screen }}</label>
+    <time>{{ duration }}</time>
   </section>
 {{ /each }}
-</template>
+</body>

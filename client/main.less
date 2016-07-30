@@ -27,12 +27,7 @@ section, label {
 
 section {
   border-radius: 0.5208333333335vw;
-  background: @astral-ish;
   position: relative;
-
-  &.intermissionstarted {
-    background: @orange-ish;
-  }
 }
 
 label, time {
@@ -61,9 +56,33 @@ time {
 
   font-size: 3.645833333333vw;
   line-height: 5.208333333333vw;
-  color: @white;
+  color: @white;  
+}
 
-  .intermissionstarted & {
+
+.showstarted {
+}
+
+.featurestarted, .intermissionended {
+  background: @astral-ish;  
+}
+
+.intermissionstarted {
+  background: @orange-ish;
+  time {
     display: block; 
+  }
+}
+
+.endcreditsstarted {
+  background: @astral-ish;
+  label {
+    color: @orange-ish;
+  }  
+}
+
+.showended {
+  label {
+    color: @astral-ish;
   }
 }
