@@ -1,0 +1,16 @@
+<head>
+  <title>leontien</title>
+</head>
+
+<body>
+  {{> leontien}}
+</body>
+
+<template name="leontien">
+{{ #each screen in screens }}
+  <section class="intermissionstarted">
+    <label>{{ screen.label }}</label>
+    <time>18</time>
+  </section>
+{{ /each }}
+</template>

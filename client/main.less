@@ -1,0 +1,69 @@
+@astranout-blue-ish: #004361;
+@astral-ish: #3381a5;
+@orange-ish: #ff4d20;
+@white: #ffffff;
+
+html, body {
+  background: @astranout-blue-ish;
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  
+  margin: 0;
+  font-family: Montserrat;
+  font-weight: bold;
+}
+
+section, label {
+  width: 16.666666666667vw;
+  height: 16.666666666667vw;
+  margin: 1.041666666667vw;
+}
+
+section {
+  border-radius: 0.5208333333335vw;
+  background: @astral-ish;
+  position: relative;
+
+  &.intermissionstarted {
+    background: @orange-ish;
+  }
+}
+
+label, time {
+  margin: 0;
+  text-align: center;
+}
+
+label {
+  display: block;
+  font-size: 11.458333333333vw;
+  line-height: 16.666666666667vw;
+  color: @white;
+}
+
+time {
+  display: none;
+  position: absolute;
+  right: 1.041666666667vw;
+  bottom: 1.041666666667vw;
+
+  width: 5.208333333333vw;
+  height: 5.208333333333vw;
+
+  border-radius: 100%;
+  background: @astral-ish;
+
+  font-size: 3.645833333333vw;
+  line-height: 5.208333333333vw;
+  color: @white;
+
+  .intermissionstarted & {
+    display: block; 
+  }
+}
